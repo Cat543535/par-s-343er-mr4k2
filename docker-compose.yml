@@ -1,0 +1,17 @@
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: mrkt_bot_db
+    restart: always
+    environment:
+      POSTGRES_USER: bot_user
+      POSTGRES_PASSWORD: bot_password
+      POSTGRES_DB: mrkt_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

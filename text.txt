@@ -1,0 +1,2 @@
+API_URL_MODELS = 'https://api.mrkt.land/api/v1/gifts/models'
+API_URL_COLLECTIONS = 'https://api.mrkt.land/api/v1/gifts/collections'
